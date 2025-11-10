@@ -69,7 +69,7 @@ Contributions are welcome! Please fork the repo, create a feature branch, and su
 ## 🔹 References
 
 - [NSL-KDD Dataset](https://www.kaggle.com/datasets/hassan06/nslkdd).
-- Quantum GAN: [Qiskit Tutorials](https://qiskit.org/documentation/tutorials.html), [OQAN](https://arxiv.org/abs/1901.08263).
-- Adversarial Reinforcement Learning: [Original Paper](https://arxiv.org/abs/1805.11593), [Survey on AE-RL](https://ieeexplore.ieee.org/document/8962174).
+- [OQAN](https://arxiv.org/abs/1901.08263).
+- Adversarial Reinforcement Learning:[Survey on AE-RL](https://ieeexplore.ieee.org/document/8962174).
 
 For questions or collaborations, contact us.
