@@ -1,19 +1,75 @@
-# Federated Robust Intrusion Detection System Using Quantum GANs and Contrastive Adversarial Representation Distillation
+# AE-RL IDS: Intrusion Detection System Using Adversarial Learning and Quantum GANs
 
-## Overview
-This project proposes a privacy-preserving and adversarially robust Intrusion Detection System (IDS) that leverages **Quantum Generative Adversarial Networks (QGAN)**, **Contrastive Adversarial Representation Distillation (CARD)**, and **Federated Learning (FL)**.
+This repository contains the implementation of a privacy-aware, robust Intrusion Detection System (IDS) combining Adversarial Reinforcement Learning (AE-RL) and Quantum Generative Adversarial Networks (QGANs). The system is designed to detect evolving cyber attacks and handle data scarcity by generating realistic network traffic.
 
-Traditional IDS models face several challenges:
-- **Data imbalance and scarcity**: rare attack types (e.g., U2R, R2L) are underrepresented.  
-- **Adversarial vulnerability**: small perturbations can evade detection.  
-- **Data privacy**: organizations cannot share sensitive logs for centralized training.  
+## 🔹 Project Overview
 
-This hybrid approach addresses all three challenges by combining quantum-enhanced data generation, robust knowledge distillation, and federated learning for collaborative training without data sharing.
+### Adversarial Reinforcement Learning (AE-RL)
 
----
+Developed an IDS model that learns to adapt to evolving attack patterns using a reinforcement learning agent in an adversarial environment.
 
-## Key Features
-- **Quantum Data Augmentation (QGAN):** Generates synthetic attack samples to balance rare classes.  
-- **Adversarially Robust Transfer Learning (CARD):** Distills robustness from a strong teacher model into a lightweight student model.  
-- **Federated Learning Framework:** Enables collaborative IDS training without exposing raw data.  
-- **Cross-Dataset Evaluation:** Benchmarked on NSL-KDD and CIC-IDS2017 datasets under clean and adversarial conditions.
+### Quantum GAN (QGAN)
+
+Generated synthetic network traffic for both normal and attack behaviors to improve model generalization and address class imbalance.
+
+### Federated Learning (Planned)
+
+Designed to enable privacy-preserving collaborative training across multiple nodes without sharing raw data (implementation in progress).
+
+## 🔹 Features
+
+- Adaptive IDS capable of detecting diverse network attacks.
+- Data augmentation with QGAN to handle rare attack classes.
+- Modular pipeline for training, testing, and evaluation.
+- Visualization of generated data and model performance.
+- Jupyter notebooks for easy experimentation in Google Colab.
+
+## 🔹 Requirements
+
+- Python 3.8+
+- PyTorch 1.9+ (for AE-RL)
+- Qiskit 0.19+ or PennyLane 0.17+ (for QGAN)
+- NumPy, Pandas, Matplotlib, Scikit-learn
+- Optional: GPU support for QGAN training; Google Colab recommended for computational constraints.
+
+## 🔹 Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/TaicirCheikhrouhou/IDSproject-QGAN-AE-RL-FL.git
+   ```
+
+2. Navigate into the project folder:
+
+   ```bash
+   cd IDSproject-QGAN-AE-RL-FL
+   ```
+
+## 🔹 Usage
+
+### Data Preparation
+
+Load and preprocess datasets (e.g., NSL-KDD). Example in notebooks:
+
+- Download NSL-KDD from [Kaggle](https://www.kaggle.com/datasets/hassan06/nslkdd) 
+
+### QGAN Training
+
+Train the Quantum GAN to generate synthetic network traffic.
+
+### AE-RL IDS Training
+
+Train the reinforcement learning agent in the adversarial environment.
+
+## 🔹 Contributing
+
+Contributions are welcome! Please fork the repo, create a feature branch, and submit a pull request. 
+
+## 🔹 References
+
+- [NSL-KDD Dataset](https://www.kaggle.com/datasets/hassan06/nslkdd).
+- Quantum GAN: [Qiskit Tutorials](https://qiskit.org/documentation/tutorials.html), [OQAN](https://arxiv.org/abs/1901.08263).
+- Adversarial Reinforcement Learning: [Original Paper](https://arxiv.org/abs/1805.11593), [Survey on AE-RL](https://ieeexplore.ieee.org/document/8962174).
+
+For questions or collaborations, contact us.
